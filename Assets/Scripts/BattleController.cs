@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FieldManager : MonoBehaviour
+public class BattleController : MonoBehaviour
 {
-    public int RowHeight;
-    int ColumnLength;
+    FieldManager fieldManager = new FieldManager();
+    [SerializeField] int testInt;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        fieldManager.RowHeight = 5;
+        testInt = fieldManager.RowHeight;
     }
 
     // Update is called once per frame
